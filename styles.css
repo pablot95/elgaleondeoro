@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Satisfy&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.degrade{
+    height: 110vh;
+    background: linear-gradient(130deg, #D4AF37 0%, #D8B646 1%, rgba(255,255,255,1) 40%);
+}
+
+
+body{
+    font-family: "Arima", system-ui;
+    overflow-x: hidden;
+}
+
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.logo{
+    width: auto;
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+header div a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+}
+
+
+nav{
+    padding-right: 5%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    justify-content: center; /* Centrar los elementos en el nav */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none; 
+    color: #000000; 
+    transition: background-color 0.3s ease; 
+    padding-left: 15%;
+    transition: transform 0.5s ease;
+}
+
+nav ul a:hover {
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+nav ul li {
+    font-size: 1.5vw;
+    padding-left: 15%;
+}
+
+
+.visible{
+    opacity: 1;
+}
+
+
+
+
+.seccionvideo h1{
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    max-width: 70vw;
+    font-size: 4vw;
+    text-align: center;
+    font-family: "Arima", system-ui;
+    line-height: 1.2;
+    color: white;
+    animation-duration: 4s;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+
+.seccionvideo{
+    height: 80vh;
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.video{
+    width: 90vw;
+    height: auto;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    animation-duration: 4s;
+    margin-top: -3%;
+    background-color: #000000;
+    z-index: 1;
+
+}
+.video video{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    z-index: 0;
+    opacity: 0.7;
+}
+.videomobile{
+    display: none;
+}
+
+
+
+
+
+.section3{
+    display: none;
+}
+
+
+
+.seccionservicios{
+    height: 170vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 5%;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.textoservicios{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    font-family: "Arima", system-ui;
+    font-weight: 0;
+    font-size: 3vw;
+}
+
+.servicios {
+    display: flex;
+    width: 48%; 
+    height: 80vh; 
+    margin-bottom: 5px; 
+    border-radius: 10px; 
+    padding-bottom: 2%;
+    position: relative;
+    cursor: pointer;
+    animation-duration: 4s;
+}
+
+.imagenservicio {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 10px; 
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+.imagenservicio img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.imagenservicio h3 {
+    font-size: 3vw;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    transition: bottom 1s ease, opacity 2s ease;
+}
+
+.imagenservicio p {
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-size: 2vw;
+    color: white;
+    transition: bottom 1s ease, opacity 2s ease; 
+    width: 80%;
+}
+.servicios:hover p{
+    opacity: 1;
+    bottom: 20%;
+}
+.servicios:hover h3{
+    opacity: 1;
+    bottom: 80%;
+}
+.servicios:hover img{
+opacity: 0.4;
+}
+
+
+
+
+
+
+
+.section2{
+    background: linear-gradient(0deg, #fff5cf 0%, #fff9e4 50%, rgba(255,255,255,1) 100%);
+}
+
+.veni{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 3vw;
+    padding-top: 5%;
+    font-style: italic;
+    transform: rotate(-4deg);
+
+}
+
+.seccionhighlights {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+.highlight{ 
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2%;
+    animation-duration: 6s;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.imagenhighlight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    flex: 1;
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+.imagenhighlight img, .imagenhighlight video{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 7s ease;
+    cursor: pointer;
+}
+.imagenhighlight img:hover{
+    transform: scale(1.7);
+}
+.highlight p{
+    display: flex;
+    align-items: center;
+    font-size: 3.5vw;
+    max-width: 50%;
+    font-weight: 0;
+    border-radius: 24px;
+    height: 70%;
+    line-height: 1.2;
+    transition: transform 2s ease;
+    cursor: pointer;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.highlight p:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+.mapa{
+    height: 100vh;
+}
+.transporte{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.transporte img{
+    width: 20%;
+    height: auto;
+}
+.tren, .auto, .ferry{
+    margin-top: -6%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #fff9e4;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+.formulariofix{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 9vh;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: opacity 1s ease;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 900;
+}
+.formulariofix img{
+    width: 4%;
+    height: auto;
+}
+.formulariofix h2{
+    font-size: 1.7vw;
+    margin-left: -8%;
+    font-weight: 0;
+}
+
+.formulariofix form{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    width: 60%;
+}
+.formulariofix label{
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.formulariofix textarea{
+    width: 30%; 
+    height: 3vh; 
+    border: none; 
+    border-bottom: 1px solid #4a4a4a;
+    outline: none;
+    resize: none;
+}
+
+.formulariofix input {
+    border: none; 
+    border-bottom: 1px solid #4a4a4a;
+    outline: none;
+}
+
+.formulariofix button {
+    padding: 10px 15px;
+    width: 20%;
+    background-color: #03a43b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.hidden {
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+
+
+
+.contenedor {
+    display: flex;
+    margin-top: 5%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-top: 2%;
+}
+
+.formulario {
+    padding: 2%;
+    padding-left: 10%;
+    width: 45%;
+}
+
+.formulario h2 {
+    font-size: 2vw;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.formulario label {
+    font-weight: bold;
+    color: #555;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.formulario textarea {
+    height: 100px;
+    resize: none;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #218838;
+}
+
+.redes-sociales {
+    width: 45%;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+.redes img{
+    width: 100%;
+    height: auto;
+    padding: 10%;
+}
+.redes a{
+    width: 10%;
+}
+
+
+@media screen and (max-width: 440px) {
+    header{
+        padding-left: 1%;
+        padding-right: 3%;
+        height: 13vh;
+    }
+    nav ul li{
+        font-size: 3.5vw;
+        padding-left: 0;
+        margin-left: -50%;
+    }
+    .logo{
+        margin-left: 0;
+        transform: translateX(0%);
+        height: 90%;
+    }
+    .seccionvideo h1{
+        font-size: 8vw;
+        max-width: 90vw;
+        padding: 0;
+        margin: 0;
+        left: 5%;
+        top: 40%;
+    }
+    .seccionvideo{
+        height: 50vh;
+        width: 100vw;
+        margin-right: 10%;
+    }
+    .video{
+        width: 100%;
+    }
+    .videoweb{
+        display: none;
+    }
+    .videomobile{
+        display: block;
+        
+    }
+    .textoservicios{
+        font-size: 6vw;
+        padding-bottom: 10%;
+        padding-top: 20%;
+    }
+    .seccionservicios{
+        height: 180vh;
+        padding-bottom: 4%;
+        padding-top: 3%;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    .servicios{
+        width: 95%;
+        height: 40vh;
+        margin-bottom: 0;
+        padding-bottom: 1%;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .imagenservicio h3{
+        font-size: 8vw;
+    }
+    .imagenservicio p{
+        font-size: 5vw;
+    }
+    .veni{
+        font-size: 7vw;
+        padding-top: 20%;
+        padding-left: 1%;
+        padding-right: 2%;
+        padding-bottom: 10%;
+    }
+    .highlightm{
+        height: 50vh;
+        position: relative;
+        animation-duration: 3s;
+        overflow: hidden;
+        z-index: 2;
+        
+    }
+    .imagenhighlightm{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        text-align: center;
+    }
+    .imagenhighlightm img, .videomobile2{
+        width: 100vw;
+        height: 50vh;
+        z-index: -2;
+        
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgb(0, 0, 0, 0.8) 0%, rgb(0, 0, 0, 0.6) 20%, rgba(255,255,255,0) 50%);
+        z-index: 1; 
+    }
+    .highlightm p{
+        max-width: 100%;
+        font-size: 9vw;
+        position: absolute;
+        bottom: 2%;
+        color: white;
+        text-align: center;
+        line-height: 1;
+        z-index: 2;
+    }
+    .section2{
+        background: none;
+        display: none;
+    }
+    .degrademobile{
+        background: linear-gradient(0deg, #fff5cf 0%, #fff9e4 50%, rgba(255,255,255,1) 100%);
+    }
+    .section3{
+        display: block;
+        padding-bottom: 10%;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        color: #fff; /* Color de las flechas */
+        width: 30px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .swiper-button-next {
+        right: 10px; /* Posición a la derecha */
+    }
+    
+    .swiper-button-prev {
+        left: 10px; /* Posición a la izquierda */
+    }
+    
+    /* Ajusta el tamaño y efecto de hover */
+    .swiper-button-next:hover, .swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .mapa{
+        height: 80vh;
+    }
+    .transporte{
+        gap: 2%;
+        margin-top: -10%;
+    }
+    .tren, .auto, .ferry{
+        width: 30%;
+        margin-bottom: 1%;
+    }
+    .formulario h2{
+        font-size: 6vw;
+        width: 150%;
+    }
+    .redes a{
+        width: 30%;
+    }
+    .contenedor{
+        padding-top: 25%;
+    }
+    .formulario{
+        width: 60%;
+    }
+    .formulariofix{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .formulariofix img{
+        width: 4%;
+        height: auto;
+    }
+    .formulariofix h2{
+        font-size: 4vw;
+        margin-left: -8%;
+        font-weight: 0;
+    }
+    
+    .formulariofix form{
+        display: flex;
+        align-items: center;
+        gap: 3%;
+        width: 60%;
+    }
+    .formulariofix label{
+        font-size: 1.2vw;
+        font-weight: bold;
+    }
+    
+    .formulariofix textarea{
+        width: 30%; 
+        height: 3vh; 
+        border: none; 
+        border-bottom: 1px solid #4a4a4a;
+        outline: none;
+        resize: none;
+    }
+    
+    .formulariofix input {
+        border: none; 
+        border-bottom: 1px solid #4a4a4a;
+        outline: none;
+    }
+    
+    .formulariofix button {
+        padding: 10px 15px;
+        width: 20%;
+        background-color: #03a43b;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+}
