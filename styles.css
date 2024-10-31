@@ -8,7 +8,7 @@
 }
 
 .degrade{
-    height: 110vh;
+    height: 140vh;
     background: linear-gradient(130deg, #D4AF37 0%, #D8B646 1%, rgba(255,255,255,1) 40%);
 }
 
@@ -241,7 +241,7 @@ opacity: 0.4;
 
 
 .section2{
-    background: linear-gradient(0deg, #fff5cf 0%, #fff9e4 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, #fff8dc 0%, #fff9e4 70%, rgba(255,255,255,1) 100%);
 }
 
 .veni{
@@ -339,7 +339,7 @@ opacity: 0.4;
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: #fff9e4;
+    background-color: #fdfaf1;
     padding-top: 2%;
     padding-bottom: 2%;
     border-radius: 12px;
@@ -511,6 +511,12 @@ opacity: 0.4;
 
 
 @media screen and (max-width: 440px) {
+    body{
+        overflow-x: hidden;
+    }
+    .degrade{
+        height: 80vh;
+    }
     header{
         padding-left: 1%;
         padding-right: 3%;
@@ -551,13 +557,13 @@ opacity: 0.4;
     }
     .textoservicios{
         font-size: 6vw;
-        padding-bottom: 10%;
-        padding-top: 20%;
+        padding-bottom: 0%;
+        padding-top: 25%;
     }
     .seccionservicios{
         height: 180vh;
         padding-bottom: 4%;
-        padding-top: 3%;
+        padding-top: 0%;
         margin-bottom: 0%;
         margin-top: 0%;
     }
@@ -634,6 +640,7 @@ opacity: 0.4;
     .section3{
         display: block;
         padding-bottom: 10%;
+        overflow-x: hidden;
     }
     .swiper-button-next, .swiper-button-prev {
         color: #fff; /* Color de las flechas */
@@ -666,8 +673,9 @@ opacity: 0.4;
         margin-top: -10%;
     }
     .tren, .auto, .ferry{
-        width: 30%;
+        width: 31%;
         margin-bottom: 1%;
+        padding: 4px;
     }
     .formulario h2{
         font-size: 6vw;
@@ -683,53 +691,6 @@ opacity: 0.4;
         width: 60%;
     }
     .formulariofix{
-        padding-left: 0;
-        margin-left: 0;
-    }
-    .formulariofix img{
-        width: 4%;
-        height: auto;
-    }
-    .formulariofix h2{
-        font-size: 4vw;
-        margin-left: -8%;
-        font-weight: 0;
-    }
-    
-    .formulariofix form{
-        display: flex;
-        align-items: center;
-        gap: 3%;
-        width: 60%;
-    }
-    .formulariofix label{
-        font-size: 1.2vw;
-        font-weight: bold;
-    }
-    
-    .formulariofix textarea{
-        width: 30%; 
-        height: 3vh; 
-        border: none; 
-        border-bottom: 1px solid #4a4a4a;
-        outline: none;
-        resize: none;
-    }
-    
-    .formulariofix input {
-        border: none; 
-        border-bottom: 1px solid #4a4a4a;
-        outline: none;
-    }
-    
-    .formulariofix button {
-        padding: 10px 15px;
-        width: 20%;
-        background-color: #03a43b;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+        display: none;
     }
 }

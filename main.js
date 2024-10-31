@@ -103,7 +103,7 @@ const observer3 = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             // Agrega las clases de animación cuando el elemento entra en el viewport
-            entry.target.classList.add('animate__fadeInUp', 'visible');
+            entry.target.classList.add('animate__fadeInUp', 'visible', 'animate__animated');
             
             // Deja de observar el elemento una vez que la animación se ha activado
             observer.unobserve(entry.target);
