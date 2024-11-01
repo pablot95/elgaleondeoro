@@ -9,7 +9,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     const name = document.getElementById("name").value;
     const message = document.getElementById("message").value;
 
-    const phoneNumber = "5491165887751";
+    const phoneNumber = "5491151613549";
 
     const whatsappMessage = `Hola, mi nombre es ${name}. \n\n${message}`;
 
@@ -32,7 +32,7 @@ document.getElementById("contactForm2").addEventListener("submit", function(even
     const name2 = document.getElementById("name2").value;
     const message2 = document.getElementById("message2").value;
 
-    const phoneNumber2 = "5491165887751";
+    const phoneNumber2 = "5491151613549";
 
     const whatsappMessage2 = `Hola, mi nombre es ${name2}. \n\n${message2}`;
 
@@ -160,6 +160,25 @@ animatedElements5.forEach(element => {
     observer5.observe(element);
 });
 
+const animatedElements6 = document.querySelectorAll('.highlightm');
+
+// Configura el IntersectionObserver
+const observer6 = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Agrega las clases de animación cuando el elemento entra en el viewport
+            entry.target.classList.add('animate__fadeIn', 'visible');
+            
+            // Deja de observar el elemento una vez que la animación se ha activado
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.00001 }); // El 50% del elemento debe estar visible
+
+// Aplica el observer a cada elemento animado
+animatedElements6.forEach(element => {
+    observer6.observe(element);
+});
 
 const swiper = new Swiper('.swiper-container', {
     loop: true, // Para que el carrusel se repita
