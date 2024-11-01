@@ -8,8 +8,8 @@
 }
 
 .degrade{
-    height: 140vh;
-    background: linear-gradient(130deg, #D4AF37 0%, #D8B646 1%, rgba(255,255,255,1) 40%);
+    height: 100%;
+    background: linear-gradient(110deg, #D4AF37 0%, #D8B646 1%, rgba(255,255,255,1) 40%);
 }
 
 
@@ -85,7 +85,7 @@ nav ul li {
 
 .seccionvideo h1{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 14%;
     max-width: 70vw;
     font-size: 4vw;
@@ -102,13 +102,12 @@ nav ul li {
 .seccionvideo{
     height: 80vh;
     width: 100%;
-    margin-top: 3%;
+    margin-top: 9%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 10%;
     position: relative;
-    overflow: hidden;
     border-radius: 12px;
 }
 
@@ -148,11 +147,11 @@ nav ul li {
 
 
 .seccionservicios{
-    height: 170vh;
-    padding-left: 2%;
-    padding-right: 2%;
+    height: 250vh;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 5%;
-    margin-top: 2%;
+    margin-top: 1%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -166,20 +165,22 @@ nav ul li {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 10%;
-    padding-bottom: 3%;
+    padding-top: 0%;
+    padding-bottom: 5%;
     font-family: "Arima", system-ui;
     font-weight: 0;
     font-size: 3vw;
+    width: 48%;
 }
 
 .servicios {
     display: flex;
-    width: 48%; 
-    height: 80vh; 
+    width: 45%; 
+    height: 70vh; 
     margin-bottom: 5px; 
     border-radius: 10px; 
-    padding-bottom: 2%;
+    padding-bottom: -5%;
+    padding-top: 0;
     position: relative;
     cursor: pointer;
     animation-duration: 4s;
@@ -221,6 +222,7 @@ nav ul li {
     color: white;
     transition: bottom 1s ease, opacity 2s ease; 
     width: 80%;
+    font-weight: 600;
 }
 .servicios:hover p{
     opacity: 1;
@@ -261,10 +263,13 @@ opacity: 0.4;
     overflow: hidden;
     padding-top: 5%;
     padding-bottom: 5%;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
 }
 .highlight{ 
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -281,10 +286,12 @@ opacity: 0.4;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 40%;
+    width: 100%;
     flex: 1;
     border-radius: 10px; 
     overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .imagenhighlight img, .imagenhighlight video{
@@ -295,14 +302,14 @@ opacity: 0.4;
     transition: transform 7s ease;
     cursor: pointer;
 }
-.imagenhighlight img:hover{
+.imagenhighlight img:hover, .imagenhighlight video:hover{
     transform: scale(1.7);
 }
 .highlight p{
     display: flex;
     align-items: center;
-    font-size: 3.5vw;
-    max-width: 50%;
+    font-size: 3vw;
+    max-width: 60%;
     font-weight: 0;
     border-radius: 24px;
     height: 70%;
@@ -311,6 +318,7 @@ opacity: 0.4;
     cursor: pointer;
     padding-left: 2%;
     padding-right: 2%;
+    font-weight: 600;
 }
 .highlight p:hover{
     transform: scale(1.1);
@@ -432,7 +440,6 @@ opacity: 0.4;
     width: 100%;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding-top: 2%;
 }
@@ -510,22 +517,84 @@ opacity: 0.4;
 }
 
 
+
+
+.nosotros{
+    text-align: center;
+    height: 90vh;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 5%;
+    box-shadow: 1px 1px 6px rgba(49, 49, 49, 0.5);
+    border-radius: 24px;
+    padding: 3%;
+}
+.nosotros h3{
+    font-size: 3.5vw;
+    font-weight: 400;
+    font-style: italic;
+}
+.nosotros p{
+    font-size: 1.7vw;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+
+
+
+
+footer{
+    height: 25vh;
+    background: linear-gradient(0deg, #fef2c0 0%, #fff9e4 70%, rgba(255,255,255,1) 100%);  
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.logofooter{
+    height: 80%;
+    width: auto;
+}
+footer h4{
+    font-size: 1.4vw;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.redesfooter{
+    height: 4vh;
+    width: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
 @media screen and (max-width: 440px) {
     body{
         overflow-x: hidden;
-    }
-    .degrade{
-        height: 80vh;
     }
     header{
         padding-left: 1%;
         padding-right: 3%;
         height: 13vh;
     }
+    nav ul a{
+        padding-left: 5%;
+        padding-right: 3%;
+        font-weight: 600;
+    }
     nav ul li{
-        font-size: 3.5vw;
-        padding-left: 0;
-        margin-left: -50%;
+        font-size: 4vw;
+        padding: 0;
+        margin-left: -20%;
     }
     .logo{
         margin-left: 0;
@@ -555,17 +624,12 @@ opacity: 0.4;
         display: block;
         
     }
-    .textoservicios{
-        font-size: 6vw;
-        padding-bottom: 0%;
-        padding-top: 25%;
-    }
     .seccionservicios{
         height: 180vh;
         padding-bottom: 4%;
         padding-top: 0%;
         margin-bottom: 0%;
-        margin-top: 0%;
+        margin-top: 2%;
     }
     .servicios{
         width: 95%;
@@ -574,6 +638,12 @@ opacity: 0.4;
         padding-bottom: 1%;
         padding-top: 0;
         margin-top: 0;
+    }
+    .textoservicios{
+        font-size: 6vw;
+        padding-bottom: -5%;
+        padding-top: 8%;
+        height: 20vh;
     }
     .imagenservicio h3{
         font-size: 8vw;
@@ -589,7 +659,7 @@ opacity: 0.4;
         padding-bottom: 10%;
     }
     .highlightm{
-        height: 50vh;
+        height: 45vh;
         position: relative;
         animation-duration: 3s;
         overflow: hidden;
@@ -622,7 +692,7 @@ opacity: 0.4;
     }
     .highlightm p{
         max-width: 100%;
-        font-size: 9vw;
+        font-size: 7vw;
         position: absolute;
         bottom: 2%;
         color: white;
@@ -692,5 +762,47 @@ opacity: 0.4;
     }
     .formulariofix{
         display: none;
+    }
+    .nosotros{
+        height: 40vh;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .nosotros h3{
+        font-size: 6vw;
+    }
+    .nosotros p{
+        font-size: 3vw;
+    }
+    footer{
+        height: 100%;
+        background: linear-gradient(0deg, #fef2c0 0%, #fff9e4 70%, rgba(255,255,255,1) 100%);  
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    footer div{
+        margin-bottom: 5%;
+    }
+    .logofooter{
+        width: 40%;
+        height: auto;
+    }
+    footer h4{
+        font-size: 5.2vw;
+    }
+    footer a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .redesfooter{
+        height: 5vh;
+        width: auto;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 }
