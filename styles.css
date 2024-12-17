@@ -85,10 +85,10 @@ nav ul li {
 
 .seccionvideo h1{
     position: absolute;
-    top: 40%;
-    left: 14%;
-    max-width: 70vw;
-    font-size: 4vw;
+    top: 5%;
+    left: 10%;
+    max-width: 60vw;
+    font-size: 3.5vw;
     text-align: center;
     font-family: "Arima", system-ui;
     line-height: 1.2;
@@ -112,7 +112,7 @@ nav ul li {
 }
 
 .video{
-    width: 90vw;
+    width: 70vw;
     height: auto;
     border-radius: 12px;
     display: flex;
@@ -147,16 +147,18 @@ nav ul li {
 
 
 .seccionservicios{
-    height: 250vh;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
+    height: 175vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 12%;
+    gap: 3%;
     margin-top: 1%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .textoservicios{
@@ -175,11 +177,10 @@ nav ul li {
 
 .servicios {
     display: flex;
-    width: 45%; 
-    height: 70vh; 
-    margin-bottom: 5px; 
+    width: 48%; 
+    height: 80vh; 
+    margin-bottom: 2%; 
     border-radius: 10px; 
-    padding-bottom: -5%;
     padding-top: 0;
     position: relative;
     cursor: pointer;
@@ -242,87 +243,125 @@ opacity: 0.4;
 
 
 
-.section2{
-    background: linear-gradient(0deg, #fff8dc 0%, #fff9e4 70%, rgba(255,255,255,1) 100%);
-}
 
-.veni{
+
+.fondofix{
+    height: 100vh; /* Ocupa toda la pantalla */
+    background-image: url('./imagenes/FondoBosque.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    justify-content: center;
-    font-size: 3vw;
-    padding-top: 5%;
-    font-style: italic;
-    transform: rotate(-4deg);
-
+}
+.fondofix h2{
+    font-size: 5vw;
+    line-height: 320%;
+    color: white;
+    text-shadow: 2px 2px 4px black;
 }
 
-.seccionhighlights {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 5%;
-    padding-bottom: 5%;
+
+
+/* Contenedor principal */
+.section-container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 5%;
-}
-.highlight{ 
-    height: 60vh;
-    width: 100%;
-    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2%;
-    animation-duration: 6s;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
+    gap: 20px;
+    width: 100%;
+    height: 90vh; /* Ajusta según el diseño */
+    background-color: #f5f5f5;
 }
 
-.imagenhighlight{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* Imagen y fondo */
+.image-container {
+    position: relative;
+    width: 40%; /* Ajusta el tamaño de la imagen */
     height: 100%;
-    width: 100%;
-    flex: 1;
-    border-radius: 10px; 
     overflow: hidden;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.imagenhighlight img, .imagenhighlight video{
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-    transition: transform 7s ease;
-    cursor: pointer;
-}
-.imagenhighlight img:hover, .imagenhighlight video:hover{
-    transform: scale(1.7);
-}
-.highlight p{
+    border-radius: 10px; /* Bordes redondeados */
     display: flex;
     align-items: center;
-    font-size: 3vw;
-    max-width: 60%;
-    font-weight: 0;
-    border-radius: 24px;
-    height: 70%;
-    line-height: 1.2;
-    transition: transform 2s ease;
-    cursor: pointer;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-weight: 600;
 }
-.highlight p:hover{
-    transform: scale(1.1);
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./imagenes/imagen11.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Desenfoque del fondo */
+    z-index: 1;
 }
+.background-image1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./imagenes/imagen7.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Desenfoque del fondo */
+    z-index: 1;
+}
+.background-image2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./imagenes/imagen8.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Desenfoque del fondo */
+    z-index: 1;
+}
+
+.image-container img {
+    position: relative;
+    width: 75%; /* Tamaño de la imagen principal */
+    height: 75%;
+    z-index: 2; /* Por encima del fondo */
+    margin: auto; /* Centra la imagen principal */
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Opcional: sombra para destacar */
+    transition: 2s ease;
+}
+.image-container img:hover{
+    transform: scale(1.3);
+}
+
+  /* Texto */
+.text-container {
+    width: 53%;
+    padding: 20px;
+}
+
+.text-container h2 {
+    font-size: 2.5vw;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 3;
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 
 
@@ -351,6 +390,7 @@ opacity: 0.4;
     padding-top: 2%;
     padding-bottom: 2%;
     border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -369,7 +409,7 @@ opacity: 0.4;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 9vh;
+    height: 7vh;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding-top: 1%;
@@ -379,11 +419,11 @@ opacity: 0.4;
     z-index: 900;
 }
 .formulariofix img{
-    width: 4%;
+    width: 3.5%;
     height: auto;
 }
 .formulariofix h2{
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     margin-left: -8%;
     font-weight: 0;
 }
@@ -610,7 +650,7 @@ footer a{
         top: 40%;
     }
     .seccionvideo{
-        height: 50vh;
+        height: 60vh;
         width: 100vw;
         margin-right: 10%;
     }
@@ -626,8 +666,8 @@ footer a{
     }
     .seccionservicios{
         height: 180vh;
-        padding-bottom: 4%;
-        padding-top: 0%;
+        padding-bottom: 7%;
+        padding-top: 4%;
         margin-bottom: 0%;
         margin-top: 2%;
     }
@@ -651,12 +691,11 @@ footer a{
     .imagenservicio p{
         font-size: 5vw;
     }
-    .veni{
-        font-size: 7vw;
-        padding-top: 20%;
-        padding-left: 1%;
-        padding-right: 2%;
-        padding-bottom: 10%;
+    .fondofix h2{
+        font-size: 12vw;
+    }
+    .section-container{
+        display: none;
     }
     .highlightm{
         height: 45vh;
@@ -665,7 +704,8 @@ footer a{
         overflow: hidden;
         z-index: 2;
         animation-duration: 3s;
-        
+        display: flex;
+        justify-content: center;
     }
     .imagenhighlightm{
         width: 100%;
@@ -698,7 +738,7 @@ footer a{
         bottom: 2%;
         color: white;
         text-align: center;
-        line-height: 1;
+        line-height: 1.3;
         z-index: 2;
     }
     .section2{
@@ -710,8 +750,10 @@ footer a{
     }
     .section3{
         display: block;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
+        padding-top: 5%;
         overflow-x: hidden;
+        background-color: #fff5cf;
     }
     .swiper-button-next, .swiper-button-prev {
         color: #fff; /* Color de las flechas */
