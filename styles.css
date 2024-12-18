@@ -256,10 +256,12 @@ opacity: 0.4;
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 2;
+    opacity: 0.9;
 }
 .fondofix h2{
     font-size: 5vw;
-    line-height: 320%;
+    line-height: 200%;
     color: white;
     text-shadow: 2px 2px 4px black;
 }
@@ -692,7 +694,11 @@ footer a{
         font-size: 5vw;
     }
     .fondofix h2{
-        font-size: 12vw;
+        font-size: 13vw;
+    }
+    .fondofix{
+        padding-left: 3%;
+        padding-right: 3%;
     }
     .section-container{
         display: none;
