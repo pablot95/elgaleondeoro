@@ -589,7 +589,7 @@ opacity: 0.4;
 
 
 footer{
-    height: 25vh;
+    height: 60vh;
     background: linear-gradient(0deg, #fef2c0 0%, #fff9e4 70%, rgba(255,255,255,1) 100%);  
     margin-top: 3%;
     display: flex;
@@ -598,6 +598,7 @@ footer{
     text-align: center;
     padding-right: 5%;
     padding-left: 5%;
+    padding-top: 5%;
 }
 .logofooter{
     height: 80%;
@@ -616,6 +617,17 @@ footer a{
     width: auto;
     margin-left: 3%;
     margin-right: 3%;
+}
+.noSePermite{
+    max-width: 22%;
+    text-align: left;
+
+}
+.noSePermite p{
+    font-size: 0.9vw;
+    color: red;
+    max-width: 100%;
+    padding-top: 4%;
 }
 
 
@@ -853,5 +865,16 @@ footer a{
         width: auto;
         margin-left: 3%;
         margin-right: 3%;
+    }
+    .noSePermite{
+        max-width: 90%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .noSePermite p{
+        font-size: 3vw;
     }
 }
