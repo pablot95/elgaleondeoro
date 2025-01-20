@@ -260,7 +260,7 @@ opacity: 0.4;
     opacity: 0.9;
 }
 .fondofix h2{
-    font-size: 5vw;
+    font-size: 7vw;
     line-height: 200%;
     color: white;
     text-shadow: 2px 2px 4px black;
@@ -706,7 +706,7 @@ footer a{
         font-size: 5vw;
     }
     .fondofix h2{
-        font-size: 13vw;
+        font-size: 15vw;
     }
     .fondofix{
         padding-left: 3%;
